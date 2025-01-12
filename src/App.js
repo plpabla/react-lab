@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <h1>My favourite movies to watch!</h1>
-      <h2>My favourite movie for today is {title.length ? title : "...."}</h2>
+      <h2>
+        My favourite movie for today is {title.length ? `"${title}"` : "...."}
+      </h2>
       <div>
         {title.length < 2
           ? "za krótkie to"
