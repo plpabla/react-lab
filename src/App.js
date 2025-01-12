@@ -1,5 +1,12 @@
 import { useState } from "react";
 
+const movies = [
+  { title: "Wall-E" },
+  { title: "Pulp Fiction" },
+  { title: "Matrix" },
+  { title: "1670" },
+];
+
 function App() {
   const [title, setTitle] = useState("The Matrix");
 
@@ -10,6 +17,12 @@ function App() {
   return (
     <div>
       <h1>My favourite movies to watch!</h1>
+      <ul>
+        {movies.map((movie, index) => (
+          <li key={index}>{movie.title}</li>
+        ))}
+      </ul>
+      <hr />
       <h2>
         My favourite movie for today is {title.length ? `"${title}"` : "...."}
       </h2>
