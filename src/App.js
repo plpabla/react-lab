@@ -1,3 +1,4 @@
+import "milligram";
 import { useState } from "react";
 
 const movies = [
