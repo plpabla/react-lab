@@ -21,6 +21,7 @@ function App() {
           : "dobry film"}
       </div>
       <input type="text" value={title} onChange={handleChange} />
+      <button onClick={() => setTitle("")}>Clear</button>
     </div>
   );
 }
