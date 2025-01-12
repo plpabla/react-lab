@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>My favourite movies to watch!</h1>
       <ul>
         {movies.map((movie, index) => (
@@ -35,7 +35,9 @@ function App() {
           : "dobry film"}
       </div>
       <input type="text" value={title} onChange={handleChange} />
-      <button onClick={() => setTitle("")}>Clear</button>
+      <button className="button" onClick={() => setTitle("")}>
+        Clear
+      </button>
     </div>
   );
 }
